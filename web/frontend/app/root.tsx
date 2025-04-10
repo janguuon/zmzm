@@ -32,17 +32,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-      <h1>welcome to zmzm!</h1>
-        {/*<Outlet />
-        <Scripts />
          {children}
         <ScrollRestoration />
-        <Scripts /> */}
+        <Scripts />
       </body>
     </html>
   );
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+      <>
+        <Outlet />
+      </>
+  );
 }
+
