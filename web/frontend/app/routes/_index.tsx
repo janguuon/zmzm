@@ -1,6 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import mainImage from "~/public/즈므즈므_메인이미지.jpeg";
 import Footer from "~/components/Footer";
 
 export const meta: MetaFunction = () => {
@@ -18,7 +17,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-                <img src="/public/즈므즈므로고.png" alt="즈므즈므 로고" className="h-24" />
+                <img src="/zmzm_logo.png" alt="즈므즈므 로고" className="h-24" />
             </div>
             <div className="flex items-center space-x-4">
               <Link to="/products" className="text-gray-600 hover:text-gray-900">
