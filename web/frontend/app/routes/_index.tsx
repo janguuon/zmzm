@@ -17,16 +17,16 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-                <img src="/zmzm_logo.png" alt="즈므즈므 로고" className="h-24" />
+                <img src="/zmzm_logo.png" alt="즈므즈므 로고" className="h-16 sm:h-20 md:h-24" />
             </div>
-            <div className="flex items-center space-x-4">
-              <Link to="/products" className="text-gray-600 hover:text-gray-900">
+            <div className="flex items-center space-x-2 sm:space-x-4">
+              <Link to="/products" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
                 상품
               </Link>
-              <Link to="/about" className="text-gray-600 hover:text-gray-900">
+              <Link to="/about" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
                 소개
               </Link>
-              <Link to="/contact" className="text-gray-600 hover:text-gray-900">
+              <Link to="/contact" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
                 문의
               </Link>
             </div>
@@ -49,17 +49,19 @@ export default function Index() {
         {/* Content */}
         <div className="relative z-10 h-screen flex flex-col">
           <div className="flex-grow flex items-center justify-start">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative top-[100px] right-[300px]">
-              <h1 className="text-4xl font-extrabold tracking-tight text-gray-300 sm:text-5xl lg:text-6xl">
+            <div className="w-full px-4 sm:px-6 lg:px-8 text-center relative sm:text-left 
+                          top-[50px] sm:top-[75px] md:top-[100px] 
+                          right-0 sm:right-[150px] md:right-[0px]">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-300">
                 서핑의 즐거움을 함께하세요
               </h1>
-              <p className="mt-6 text-xl text-gray-300 max-w-3xl">
+              <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto sm:mx-0">
                 프리미엄 서핑 용품과 전문가의 조언으로 당신의 서핑 경험을 한 단계 업그레이드하세요.
               </p>
-              <div className="mt-10">
+              <div className="mt-6 sm:mt-10">
                 <Link
                   to="/products"
-                  className="inline-block bg-white py-3 px-8 border border-gray-900 rounded-md text-base font-medium text-gray-900 hover:bg-[#FAEBD7]/90"
+                  className="inline-block bg-white py-2 sm:py-3 px-6 sm:px-8 border border-gray-900 rounded-md text-sm sm:text-base font-medium text-gray-900 hover:bg-[#FAEBD7]/90"
                 >
                   강습 보기
                 </Link>
