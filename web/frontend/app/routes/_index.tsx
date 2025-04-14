@@ -18,9 +18,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <Link to="/">
                 <img src="/public/즈므즈므로고.png" alt="즈므즈므 로고" className="h-24" />
-              </Link>
             </div>
             <div className="flex items-center space-x-4">
               <Link to="/products" className="text-gray-600 hover:text-gray-900">
@@ -43,7 +41,7 @@ export default function Index() {
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
-            src="/public/1.jpg"
+            src="/1.jpg"
             alt="즈므즈므 메인 이미지"
           />
           <div className="absolute inset-0 bg-[#FFF5EE]/1"></div>
