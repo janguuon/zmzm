@@ -14,9 +14,6 @@ export const meta: MetaFunction = () => {
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const apiKey = process.env.GOOGLE_MAPS_API_KEY;
-  if (!apiKey) {
-    throw new Error("Google Maps API key is not set");
-  }
   return json({ apiKey });
 };
 
@@ -41,15 +38,21 @@ export default function Location() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">  {/* 그리드 간격 증가 */}
             {/* 지도 */}
             <div className="w-full h-full">
-              <LoadScript googleMapsApiKey={apiKey}>
-                <GoogleMap
-                  mapContainerStyle={containerStyle}
-                  center={center}
-                  zoom={15}
-                >
-                  <Marker position={center} />
-                </GoogleMap>
-              </LoadScript>
+              {apiKey ? (
+                <LoadScript googleMapsApiKey={apiKey}>
+                  <GoogleMap
+                    mapContainerStyle={containerStyle}
+                    center={center}
+                    zoom={15}
+                  >
+                    <Marker position={center} />
+                  </GoogleMap>
+                </LoadScript>
+              ) : (
+                <div className="w-full h-[400px] bg-gray-100 flex items-center justify-center">
+                  <p className="text-gray-500">지도를 불러오는 중입니다...</p>
+                </div>
+              )}
             </div>
 
             {/* 위치 정보 */}
