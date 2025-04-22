@@ -31,9 +31,6 @@ export default function Index() {
               <Link to="/location" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
                 오시는길
               </Link>
-              <Link to="/community" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                커뮤니티
-              </Link>
             </div>
           </div>
         </div>
@@ -44,7 +41,7 @@ export default function Index() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-cover"
             src="/1.jpg"
             alt="즈므즈므 메인 이미지"
           />

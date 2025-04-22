@@ -26,9 +26,6 @@ export default function Layout({ children }: LayoutProps) {
               <Link to="/location" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
                 오시는길
               </Link>
-              <Link to="/community" className="text-sm sm:text-base text-gray-600 hover:text-gray-900">
-                커뮤니티
-              </Link>
             </div>
           </div>
         </div>
