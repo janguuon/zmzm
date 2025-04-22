@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useState } from "react";
 import Layout from "~/components/Layout";
+import Footer from "~/components/Footer";
 
 export const meta: MetaFunction = () => {
   return [
@@ -56,67 +57,70 @@ export default function Facility() {
   };
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-[#FFF5EE] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-8">시설안내</h1>
-          
-          {/* 시설 선택 버튼 */}
-          <div className="flex space-x-4 mb-8">
-            {facilities.map((facility, index) => (
-              <button
-                key={facility.id}
-                onClick={() => {
-                  setCurrentFacility(index);
-                  setCurrentImage(0);
-                }}
-                className={`px-4 py-2 rounded-md ${
-                  currentFacility === index
-                    ? "bg-gray-900 text-white"
-                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                }`}
-              >
-                {facility.title}
-              </button>
-            ))}
-          </div>
-
-          {/* 이미지 슬라이더 */}
-          <div className="relative mb-8">
-            <div className="aspect-w-16 aspect-h-9">
-              <img
-                src={facilities[currentFacility].images[currentImage]}
-                alt={facilities[currentFacility].title}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
+    <div className="min-h-screen flex flex-col bg-[#FFF5EE]">
+      <Layout>
+        <div className="min-h-screen bg-[#FFF5EE] py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-8">시설안내</h1>
             
-            {/* 이미지 네비게이션 버튼 */}
-            <button
-              onClick={prevImage}
-              className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
-            >
-              ←
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
-            >
-              →
-            </button>
-          </div>
+            {/* 시설 선택 버튼 */}
+            <div className="flex space-x-4 mb-8">
+              {facilities.map((facility, index) => (
+                <button
+                  key={facility.id}
+                  onClick={() => {
+                    setCurrentFacility(index);
+                    setCurrentImage(0);
+                  }}
+                  className={`px-4 py-2 rounded-md ${
+                    currentFacility === index
+                      ? "bg-gray-900 text-white"
+                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  }`}
+                >
+                  {facility.title}
+                </button>
+              ))}
+            </div>
 
-          {/* 시설 설명 */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              {facilities[currentFacility].title}
-            </h2>
-            <p className="text-gray-600">
-              {facilities[currentFacility].description}
-            </p>
+            {/* 이미지 슬라이더 */}
+            <div className="relative mb-8">
+              <div className="aspect-w-16 aspect-h-9">
+                <img
+                  src={facilities[currentFacility].images[currentImage]}
+                  alt={facilities[currentFacility].title}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              
+              {/* 이미지 네비게이션 버튼 */}
+              <button
+                onClick={prevImage}
+                className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
+              >
+                ←
+              </button>
+              <button
+                onClick={nextImage}
+                className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
+              >
+                →
+              </button>
+            </div>
+
+            {/* 시설 설명 */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                {facilities[currentFacility].title}
+              </h2>
+              <p className="text-gray-600">
+                {facilities[currentFacility].description}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+      <Footer />
+    </div>
   );
 } 

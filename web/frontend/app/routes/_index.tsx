@@ -65,8 +65,8 @@ export default function Index() {
         </div>
       </div>
 
-      {/* Footer 
-      <Footer />*/}
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
