@@ -60,14 +60,6 @@ export default function Index() {
               <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto sm:mx-0">
                 프리미엄 서핑 용품과 전문가의 조언으로 당신의 서핑 경험을 한 단계 업그레이드하세요.
               </p>
-              <div className="mt-6 sm:mt-10">
-                <Link
-                  to="/products"
-                  className="inline-block bg-white py-2 sm:py-3 px-6 sm:px-8 border border-gray-900 rounded-md text-sm sm:text-base font-medium text-gray-900 hover:bg-[#FAEBD7]/90"
-                >
-                  강습 보기
-                </Link>
-              </div>
             </div>
           </div>
         </div>
