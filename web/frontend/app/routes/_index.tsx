@@ -41,8 +41,8 @@ export default function Index() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            className="w-full h-full object-cover"
-            src="/1.jpg"
+            className="w-full h-full object-cover object-center min-h-screen"
+            src="/main_1.JPEG"
             alt="즈므즈므 메인 이미지"
           />
           <div className="absolute inset-0 bg-[#FFF5EE]/1"></div>
