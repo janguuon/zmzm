@@ -11,7 +11,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FFF5EE]">
+    <div className="min-h-screen flex flex-col bg-white">
       {/* Navigation */}
       <nav className="bg-[#FFF5EE]/80 backdrop-blur-sm shadow-lg relative z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +42,7 @@ export default function Index() {
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover object-center min-h-screen"
-            src="/main_1.JPEG"
+            src="/main_3.jpeg"
             alt="즈므즈므 메인 이미지"
           />
           <div className="absolute inset-0 bg-[#FFF5EE]/1"></div>

@@ -11,7 +11,7 @@ export const meta: MetaFunction = () => {
 
 export default function Surfing() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FFF5EE]">
+    <div className="min-h-screen flex flex-col bg-white">
       <Layout>
         <div className="min-h-screen bg-[#FFF5EE] py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

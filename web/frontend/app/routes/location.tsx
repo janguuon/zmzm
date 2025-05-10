@@ -31,7 +31,7 @@ export default function Location() {
   const { apiKey } = useLoaderData<typeof loader>();
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FFF5EE]">
+    <div className="min-h-screen flex flex-col bg-white">
       <Layout>
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mb-48">  {/* 하단 여백을 mb-32에서 mb-48로 증가 */}
           <h1 className="text-3xl font-bold text-gray-900 mb-12">오시는길</h1>  {/* 상단 여백 증가 */}
