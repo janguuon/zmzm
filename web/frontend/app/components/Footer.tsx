@@ -40,7 +40,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className={`fixed bottom-0 left-0 right-0 bg-[#FFF5EE] shadow-lg transition-all duration-500 z-50 ${
+      className={`fixed bottom-0 left-0 right-0 bg-white shadow-lg transition-all duration-500 z-50 ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}
     >

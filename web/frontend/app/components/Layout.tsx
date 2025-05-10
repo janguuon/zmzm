@@ -6,9 +6,9 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FFF5EE]">
+    <div className="min-h-screen flex flex-col bg-white">
       {/* Navigation */}
-      <nav className="bg-[#FFF5EE]/80 backdrop-blur-sm shadow-lg relative z-20">
+      <nav className="bg-white backdrop-blur-sm shadow-lg relative z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">

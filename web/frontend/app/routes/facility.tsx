@@ -57,9 +57,9 @@ export default function Facility() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FFF5EE]">
+    <div className="min-h-screen flex flex-col bg-white">
       <Layout>
-        <div className="min-h-screen bg-[#FFF5EE] py-16">
+        <div className="min-h-screen bg-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-8">시설안내</h1>
             
